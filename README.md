@@ -5,7 +5,7 @@
 ### Main files
 - **duffing\_TD.m/duffing\_HC.m:** Codes generate Duffing oscilator data and solve the total degree/hyperbolic cross least squares problem using uniform sample, TP sampling, and leverage sampling;
 
-- **ishigami\_TD.m/ishigami\_HC.m:** Codes generate Ishigami function data and solve the total degree/hyperbolic cross least squares problem using uniform sample, TP sampling, and leverage sampling;
+- **ishigami\_TD.m/ishigami\_HC.m:** Codes generate Ishigami function data and solve the total degree/hyperbolic cross least squares problem using uniform sample, TP sampling, and leverage sampling.
 
 ### Sampling functions for <ins>hyperbolic cross</ins> polynomial spaces 
 
@@ -13,4 +13,5 @@
 
 ### Help functions
 
-- **duffing/ishigami\_plot.m:** Plot function for CDF of generated data.
+- **duffing/ishigami\_plot.m:** Plot function for CDF of generated data;
+- **my\_legendre\_1d.m:** PThis function generates 1d Gauss-Legendre node between -1 and 1.
