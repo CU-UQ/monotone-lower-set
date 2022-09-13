@@ -7,9 +7,10 @@
 
 - **ishigami\_TD.m/ishigami\_HC.m:** Codes generate Ishigami function data and solve the total degree/hyperbolic cross least squares problem using uniform sample, TP sampling, and leverage sampling.
 
-### Sampling functions for <ins>hyperbolic cross</ins> polynomial spaces 
+### Sampling functions for different polynomial spaces 
 
-- **hyperbolic\_cross\_sampling.m:** This function samples and solve the least square problem with many different sampling options. The function utilizes the tensor structure and solves sampled least square problems with less time. The sampling methods provided are uniform sampling and leverage score sampling. 
+- **hyperbolic\_cross\_sampling.m:** This function samples and solve the least square problem of hyperbolic cross space with many different sampling options. The function utilizes the tensor structure and solves sampled least square problems with less time. The sampling methods provided are uniform sampling and leverage score sampling. 
+- **total\_degree\_sampling.m:** Save above, but in the total degree space.
 
 ### Help functions
 
