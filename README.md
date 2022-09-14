@@ -1,4 +1,26 @@
-# Monotone Lower Set Sampling
+# Sampling for Monotone Lower Subsets of Kronecker Least Squares Problems
+
+This repo contains code for our paper 
+> O. A. Malik, Y. Xu, N. Cheng, S. Becker, A. Doostan, A. Narayan.
+> *Fast Algorithms for Monotone Lower Subsets of Kronecker Least Squares Problems*.
+> **arXiv preprint arXiv:2209.05662**,
+> 2022.
+
+The paper is available at [arXiv](https://arxiv.org/abs/2209.05662).
+
+## Referencing this code
+
+If you use this code in any of your own work, please reference our paper:
+```
+@misc{malik2022fast,
+      title={Fast Algorithms for Monotone Lower Subsets of Kronecker Least Squares Problems}, 
+      author={Osman Asif Malik and Yiming Xu and Nuojin Cheng and Stephen Becker and Alireza Doostan and Akil Narayan},
+      year={2022},
+      eprint={2209.05662},
+      archivePrefix={arXiv},
+      primaryClass={math.NA}
+}
+```
 
 ## Description of code
 
