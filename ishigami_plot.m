@@ -10,8 +10,11 @@ err_HC_18 = load('ishigami_HC_J=18.mat','err_all').err_all;
 err_HC_exact_15 = load('ishigami_HC_exact_J=15.mat','err').err;
 err_HC_exact_18 = load('ishigami_HC_exact_J=18.mat','err').err;
 
-figure(1);hold on;
-subplot(1,2,1)
+figure('Position', [1, 1, 800, 400]);
+tiledlayout(2,2,'Padding', 'none', 'TileSpacing','Compact');
+font_size = 14;
+
+nexttile
 err_unif = err_TD_7(:,1);
 err_lev = err_TD_7(:,2);
 err_alev = err_TD_7(:,3);
@@ -23,12 +26,13 @@ hold on
 plot(x1,f1, 'linewidth', 2, 'color', colors(2,:));
 plot(x2,f2, 'linewidth', 2, 'color', colors(3,:));
 plot(x3,f3, 'linewidth', 2, 'color', colors(4,:));
-set(gca,'FontSize',20);
+set(gca,'FontSize',10);
 xlabel('Relative Error')
 ylabel('CDF')
+title('K=7; Total Degree', 'fontsize', font_size);
 grid on
 
-subplot(1,2,2)
+nexttile
 err_unif = err_TD_9(:,1);
 err_lev = err_TD_9(:,2);
 err_alev = err_TD_9(:,3);
@@ -45,17 +49,15 @@ hold on
 plot(x1,f1, 'linewidth', 2, 'color', colors(2,:));
 plot(x2,f2, 'linewidth', 2, 'color', colors(3,:));
 plot(x3,f3, 'linewidth', 2, 'color', colors(4,:));
-legend(legend_cell(:), 'location', 'best');
-set(gca,'FontSize',20);
+set(gca,'FontSize',10);
 grid on
 set(gcf,'Position',[100 100 1400 500])
 xlabel('Relative Error')
 ylabel('CDF')
+title('K=9; Total Degree', 'fontsize', font_size);
 grid on
-print -depsc2 ishigami_TD.eps
 
-figure(2);hold on;
-subplot(1,2,1)
+nexttile
 err_unif = err_HC_15(:,1);
 err_lev = err_HC_15(:,2);
 err_alev = err_HC_15(:,3);
@@ -66,11 +68,14 @@ colors = get(gca,'colororder');
 hold on
 plot(x1,f1, 'linewidth', 2, 'color', colors(2,:));
 plot(x2,f2, 'linewidth', 2, 'color', colors(3,:));
-plot(x3,f3, 'linewidth', 2, 'color', colors(1,:));
-set(gca,'FontSize',20);
+plot(x3,f3, 'linewidth', 2, 'color', colors(4,:));
+set(gca,'FontSize',10);
+xlabel('Relative Error');
+ylabel('CDF');
+title('K=15; Hyperbolic Cross', 'fontsize', font_size);
 grid on
 
-subplot(1,2,2)
+nexttile
 err_unif = err_HC_18(:,1);
 err_lev = err_HC_18(:,2);
 err_alev = err_HC_18(:,3);
@@ -86,11 +91,11 @@ colors = get(gca,'colororder');
 hold on
 plot(x1,f1, 'linewidth', 2, 'color', colors(2,:));
 plot(x2,f2, 'linewidth', 2, 'color', colors(3,:));
-plot(x3,f3, 'linewidth', 2, 'color', colors(1,:));
+plot(x3,f3, 'linewidth', 2, 'color', colors(4,:));
 legend(legend_cell(:), 'location', 'best');
-set(gca,'FontSize',20);
+set(gca,'FontSize',10);
 set(gcf,'Position',[100 100 1400 500])
 xlabel('Relative Error')
 ylabel('CDF')
+title('K=18; Hyperbolic Cross', 'fontsize', font_size)
 grid on
-print -depsc2 ishigami_HC.eps
