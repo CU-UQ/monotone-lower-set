@@ -39,6 +39,7 @@ If you use this code in any of your own work, please reference our paper:
 ### Help functions
 
 - **duffing/ishigami/battery\_plot.m:** Plot function for CDF of generated data;
+- **duffing\_dydt**: Duffing function for ode solver;
 - **my\_legendre\_1d.m:** A function generating 1d Gauss-Legendre node between -1 and 1.
 
 ### Data
