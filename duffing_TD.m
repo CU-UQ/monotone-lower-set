@@ -58,7 +58,7 @@ end
 y = Wn.*y;
 
 % Begin trials
-no_trials = 10;
+no_trials = 100;
 err_unif = zeros(no_trials,1);
 err_lev = zeros(no_trials,1);
 err_alev = zeros(no_trials,1);

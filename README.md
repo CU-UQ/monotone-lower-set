@@ -45,3 +45,34 @@ If you use this code in any of your own work, please reference our paper:
 ### Data
 
 - **battery\_data:** A folder containing data of battery example.
+
+## Instruction for code running 
+### Nonlinear Duffing oscillator 
+1. Run matlab file **duffing\_TD.m** with following parameters:
+    - `J = 7`
+    - `J = 9`
+2. Run matlab file **duffing\_HC.m** with following parameters: 
+    - `J = 15`
+    - `J = 18`
+3. Run matlab file **duffing\_plot.m** and generate the figure. Since the result is random, figures generated won't be the same.
+    ![Nonlinear Duffing oscillator](duffing.png)
+    
+### Ishigami function 
+1. Run matlab file **ishigami\_TD.m** with following parameters:
+    - `J = 7`
+    - `J = 9`
+2. Run matlab file **ishigami\_HC.m** with following parameters: 
+    - `J = 15`
+    - `J = 18`
+3. Run matlab file **ishigami\_plot.m** and generate the figure. Since the result is random, figures generated won't be the same.
+    ![Ishigami function](ishigami.png)
+    
+### Remaining useful life of batteries 
+1. Run matlab file **battery\_test\_TD.m** with following parameters:
+    - `N = 4`
+    - `N = 5`
+2. Run matlab file **battery\_test\_HC.m** with following parameters: 
+    - `N = 4`
+    - `N = 5`
+3. Run matlab file **battery\_plot.m** and generate the figure. Since the result is random, figures generated won't be the same.
+    ![Remaining useful life of batteries](battery_0.png)
