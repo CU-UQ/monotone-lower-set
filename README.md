@@ -25,11 +25,11 @@ If you use this code in any of your own work, please reference our paper:
 ## Description of code
 
 ### Main files
-- **duffing\_TD.m/duffing\_HC.m:** Codes generating Duffing oscilator data and solving the total degree/hyperbolic cross least squares problem using uniform sample, TP sampling, and leverage sampling;
+- **duffing\_TD.m** and **duffing\_HC.m:** Codes generating Duffing oscilator data and solving the total degree/hyperbolic cross least squares problem using uniform sample, TP sampling, and leverage sampling;
 
-- **ishigami\_TD.m/ishigami\_HC.m:** Codes generating Ishigami function data and solving the total degree/hyperbolic cross least squares problem using uniform sample, TP sampling, and leverage sampling.
+- **ishigami\_TD.m** and **ishigami\_HC.m:** Codes generating Ishigami function data and solving the total degree/hyperbolic cross least squares problem using uniform sample, TP sampling, and leverage sampling.
 
-- **battery\_test\_TD.m/battery\_test\_HC.m:** Codes solving the total degree/hyperbolic cross least squares battery problem using uniform sample, TP sampling, and leverage sampling.
+- **battery\_test\_TD.m** and **battery\_test\_HC.m:** Codes solving the total degree/hyperbolic cross least squares battery problem using uniform sample, TP sampling, and leverage sampling.
 
 ### Sampling functions for different polynomial spaces 
 
@@ -38,7 +38,7 @@ If you use this code in any of your own work, please reference our paper:
 
 ### Help functions
 
-- **duffing/ishigami/battery\_plot.m:** Plot function for CDF of generated data;
+- **battery\_plot.m:** Plot function for CDF of generated data;
 - **duffing\_dydt**: Duffing function for ode solver;
 - **my\_legendre\_1d.m:** A function generating 1d Gauss-Legendre node between -1 and 1.
 
